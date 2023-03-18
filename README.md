@@ -14,7 +14,9 @@ cd zict-preprocessor
 npm install
 ```
 
-Finally, update `~/.config/zict/zict.bash`:
+Finally, update the path to the preprocessor if you decide to save the
+preprocessor in a different directory. The default path is defined in
+`~/.config/zict/zict.bash`:
 
 ```bash
 declare -r MY_PREPROCESSOR="$HOME/Code/zict-preprocessor/bin/main.mjs"
