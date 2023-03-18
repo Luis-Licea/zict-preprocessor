@@ -1,16 +1,26 @@
 {
-  "name": "tmp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "eslint": "^8.32.0",
-    "jsdom": "^21.1.0"
-  }
+    "name": "wiktionary-language-filter",
+    "version": "1.0.0",
+    "description": "Only show selected languages in a Wiktionary entry.",
+    "main": "lib/",
+    "module": "lib/",
+    "bin": {
+        "zict-preprocessor": "bin/main.mjs"
+    },
+    "scripts": {
+        "test": "node tests/test.mjs"
+    },
+    "keywords": [
+        "wiktionary",
+        "dictionary"
+    ],
+    "author": "Luis David Licea Torres <luisliceatorres@gmail.com> (https://luisliceatorres.com/)",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "jsdom": "^21.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.36.0"
+    }
 }

@@ -1,0 +1,4 @@
+# Testing artifacts that should be ignored.
+artifacts/
+# NPM packages.
+node_modules/
