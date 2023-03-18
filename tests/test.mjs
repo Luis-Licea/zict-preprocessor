@@ -10,5 +10,13 @@ if (!existsSync(artifacts)) {
     mkdirSync(artifacts);
 }
 
-filterLanguages(`${articles}/hello.html`, `${artifacts}/hello-filtered.html`);
-filterLanguages(`${articles}/japan.html`, `${artifacts}/japan-filtered.html`);
+const entries = [
+    "bar",
+    "hello",
+    "japan",
+    "o",
+    "думать",
+]
+for (const entry of entries) {
+    filterLanguages(`${articles}/${entry}.html`, `${artifacts}/${entry}-filtered.html`);
+}
